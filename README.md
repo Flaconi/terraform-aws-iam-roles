@@ -737,9 +737,9 @@ Default: `"Managed by Terraform"`
 
 Description: The maximum session duration (in seconds) that you want to set for the specified role. This setting can have a value from 1 hour to 12 hours specified in seconds.
 
-Type: `string`
+Type: `number`
 
-Default: `"3600"`
+Default: `3600`
 
 ### role\_force\_detach\_policies
 
