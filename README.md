@@ -12,7 +12,7 @@
 **[License](#license)**
 
 [![lint](https://github.com/Flaconi/terraform-aws-iam-roles/workflows/lint/badge.svg)](https://github.com/Flaconi/terraform-aws-iam-roles/actions?query=workflow%3Alint)
-[![test](https://github.com/Flaconi/terraform-aws-iam-roles/test/badge.svg)](https://github.com/Flaconi/terraform-aws-iam-roles/actions?query=workflow%3Atest)
+[![test](https://github.com/Flaconi/terraform-aws-iam-roles/workflows/test/badge.svg)](https://github.com/Flaconi/terraform-aws-iam-roles/actions?query=workflow%3Atest)
 [![Tag](https://img.shields.io/github/tag/Flaconi/terraform-aws-iam-roles.svg)](https://github.com/Flaconi/terraform-aws-iam-roles/releases)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
