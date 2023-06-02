@@ -69,9 +69,9 @@ roles = [
     policy_arns          = ["arn:aws:iam::aws:policy/AdministratorAccess"]
   },
   {
-    name                 = "ROLE-ATTACHED-TO-AN-INSTANCE-PROFILE"
-    instance_profile     = "MY-INSTANCE-PROFILE-1"
-    trust_policy_file    = "data/trust-policy-file.json"
-    policy_arns          = ["arn:aws:iam::aws:policy/PowerUserAccess"]
+    name              = "ROLE-ATTACHED-TO-AN-INSTANCE-PROFILE"
+    instance_profile  = "MY-INSTANCE-PROFILE-1"
+    trust_policy_file = "data/trust-policy-file.json"
+    policy_arns       = ["arn:aws:iam::aws:policy/PowerUserAccess"]
   },
 ]
