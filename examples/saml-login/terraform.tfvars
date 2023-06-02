@@ -15,7 +15,6 @@ policies = [
     path = "/login/assume/"
     desc = "Allow to assume other resources"
     file = "data/policy-sts-assume.json"
-    vars = {}
   },
 ]
 
@@ -24,23 +23,17 @@ policies = [
 # ASSUME-ADMIN can be assumed from LOGIN-ADMIN
 roles = [
   {
-    name                 = "LOGIN-ADMIN"
-    path                 = "/login/saml/"
-    desc                 = "Initial login role"
-    trust_policy_file    = "data/trust-policy-saml.json"
-    permissions_boundary = null
-    policies             = ["sts-assume-policy"]
-    inline_policies      = []
-    policy_arns          = []
+    name              = "LOGIN-ADMIN"
+    path              = "/login/saml/"
+    desc              = "Initial login role"
+    trust_policy_file = "data/trust-policy-saml.json"
+    policies          = ["sts-assume-policy"]
   },
   {
-    name                 = "ASSUME-ADMIN"
-    path                 = "/assume/"
-    desc                 = "Admin role"
-    trust_policy_file    = "data/trust-policy-LOGIN-ADMIN.json"
-    permissions_boundary = null
-    policies             = []
-    inline_policies      = []
-    policy_arns          = ["arn:aws:iam::aws:policy/AdministratorAccess"]
+    name              = "ASSUME-ADMIN"
+    path              = "/assume/"
+    desc              = "Admin role"
+    trust_policy_file = "data/trust-policy-LOGIN-ADMIN.json"
+    policy_arns       = ["arn:aws:iam::aws:policy/AdministratorAccess"]
   },
 ]
