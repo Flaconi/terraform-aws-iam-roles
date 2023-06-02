@@ -237,11 +237,11 @@ variable "roles" {
     permissions_boundary = optional(string)           # ARN to a policy used as permissions boundary (or null/empty)
     policies             = optional(list(string), []) # List of names of policies (must be defined in var.policies)
     policy_arns          = optional(list(string), []) # List of existing policy ARN's
-    inline_policies = list(object({
+    inline_policies = optional(list(object({
       name = string                    # Name of the inline policy
       file = string                    # Path to json or json.tmpl file of policy
       vars = optional(map(string), {}) # Policy template variables {key = val, ...}
-    }))
+    })), [])
   }))
   default = []
 }
