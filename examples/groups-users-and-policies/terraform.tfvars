@@ -40,7 +40,7 @@ users = [
     groups = ["GRP-ADMIN"]
     access_keys = [
       {
-        name    = "key-1"
+        name = "key-1"
       },
     ]
   },
@@ -50,11 +50,11 @@ users = [
     groups = ["GRP-DEVELOPER"]
     access_keys = [
       {
-        name    = "key-1"
-        status  = "Inactive"
+        name   = "key-1"
+        status = "Inactive"
       },
       {
-        name    = "key-2"
+        name = "key-2"
       },
     ]
   },

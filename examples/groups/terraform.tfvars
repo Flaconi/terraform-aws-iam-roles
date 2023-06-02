@@ -9,15 +9,15 @@ policies = [
 
 groups = [
   {
-    name            = "GRP-CUSTOM-POLICY"
-    policies        = ["billing-ro"]
+    name     = "GRP-CUSTOM-POLICY"
+    policies = ["billing-ro"]
   },
   {
-    name            = "GRP-POLICY-ARN"
-    policy_arns     = ["arn:aws:iam::aws:policy/PowerUserAccess"]
+    name        = "GRP-POLICY-ARN"
+    policy_arns = ["arn:aws:iam::aws:policy/PowerUserAccess"]
   },
   {
-    name        = "GRP-INLINE-POLICY"
+    name = "GRP-INLINE-POLICY"
     inline_policies = [
       {
         name = "rds-authenticate"
@@ -29,7 +29,7 @@ groups = [
     ]
   },
   {
-    name     = "GRP-MULTIPLE-POLICIES"
+    name = "GRP-MULTIPLE-POLICIES"
     policy_arns = [
       "arn:aws:iam::aws:policy/PowerUserAccess",
       "arn:aws:iam::aws:policy/AmazonEC2FullAccess",

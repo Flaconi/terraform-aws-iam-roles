@@ -9,9 +9,9 @@ policies = [
 
 roles = [
   {
-    name                 = "ROLE-CUSTOM-POLICY"
-    trust_policy_file    = "data/trust-policy-file.json"
-    policies             = ["billing-ro"]
+    name              = "ROLE-CUSTOM-POLICY"
+    trust_policy_file = "data/trust-policy-file.json"
+    policies          = ["billing-ro"]
   },
   {
     name              = "ROLE-POLICY-ARN"
@@ -19,11 +19,11 @@ roles = [
     trust_policy_vars = {
       aws_account_id = "123456789012"
     }
-    policy_arns          = ["arn:aws:iam::aws:policy/PowerUserAccess"]
+    policy_arns = ["arn:aws:iam::aws:policy/PowerUserAccess"]
   },
   {
-    name                 = "ROLE-INLINE-POLICY"
-    trust_policy_file    = "data/trust-policy-file.json"
+    name              = "ROLE-INLINE-POLICY"
+    trust_policy_file = "data/trust-policy-file.json"
     inline_policies = [
       {
         name = "rds-authenticate"
@@ -35,8 +35,8 @@ roles = [
     ]
   },
   {
-    name                 = "ROLE-MULTIPLE-POLICIES"
-    trust_policy_file    = "data/trust-policy-file.json"
+    name              = "ROLE-MULTIPLE-POLICIES"
+    trust_policy_file = "data/trust-policy-file.json"
     policy_arns = [
       "arn:aws:iam::aws:policy/PowerUserAccess",
       "arn:aws:iam::aws:policy/AmazonEC2FullAccess",
@@ -62,9 +62,9 @@ roles = [
     policy_arns          = ["arn:aws:iam::aws:policy/AdministratorAccess"]
   },
   {
-    name                 = "ROLE-ATTACHED-TO-AN-INSTANCE-PROFILE"
-    instance_profile     = "MY-INSTANCE-PROFILE-1"
-    trust_policy_file    = "data/trust-policy-file.json"
-    policy_arns          = ["arn:aws:iam::aws:policy/PowerUserAccess"]
+    name              = "ROLE-ATTACHED-TO-AN-INSTANCE-PROFILE"
+    instance_profile  = "MY-INSTANCE-PROFILE-1"
+    trust_policy_file = "data/trust-policy-file.json"
+    policy_arns       = ["arn:aws:iam::aws:policy/PowerUserAccess"]
   },
 ]
