@@ -498,7 +498,7 @@ The following requirements are needed by this module:
 
 - terraform (>= 1.3)
 
-- aws (>= 4)
+- aws (>= 5)
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
