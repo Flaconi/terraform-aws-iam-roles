@@ -22,8 +22,15 @@ roles = [
     policy_arns = ["arn:aws:iam::aws:policy/PowerUserAccess"]
   },
   {
-    name              = "ROLE-INLINE-POLICY"
-    trust_policy_file = "data/trust-policy-file.json"
+    name                 = "ROLE-INLINE-POLICY"
+    instance_profile     = null
+    path                 = null
+    desc                 = null
+    trust_policy_file    = "data/trust-policy-file.json"
+    trust_policy_vars    = null
+    permissions_boundary = null
+    policies             = []
+    policy_arns          = []
     inline_policies = [
       {
         name = "rds-authenticate"
@@ -62,9 +69,9 @@ roles = [
     policy_arns          = ["arn:aws:iam::aws:policy/AdministratorAccess"]
   },
   {
-    name              = "ROLE-ATTACHED-TO-AN-INSTANCE-PROFILE"
-    instance_profile  = "MY-INSTANCE-PROFILE-1"
-    trust_policy_file = "data/trust-policy-file.json"
-    policy_arns       = ["arn:aws:iam::aws:policy/PowerUserAccess"]
+    name                 = "ROLE-ATTACHED-TO-AN-INSTANCE-PROFILE"
+    instance_profile     = "MY-INSTANCE-PROFILE-1"
+    trust_policy_file    = "data/trust-policy-file.json"
+    policy_arns          = ["arn:aws:iam::aws:policy/PowerUserAccess"]
   },
 ]

@@ -30,10 +30,13 @@ roles = [
     policies          = ["sts-assume-policy"]
   },
   {
-    name              = "ASSUME-ADMIN"
-    path              = "/assume/"
-    desc              = "Admin role"
-    trust_policy_file = "data/trust-policy-LOGIN-ADMIN.json"
-    policy_arns       = ["arn:aws:iam::aws:policy/AdministratorAccess"]
+    name                 = "ASSUME-ADMIN"
+    path                 = "/assume/"
+    desc                 = "Admin role"
+    trust_policy_file    = "data/trust-policy-LOGIN-ADMIN.json"
+    permissions_boundary = null
+    policies             = []
+    inline_policies      = []
+    policy_arns          = ["arn:aws:iam::aws:policy/AdministratorAccess"]
   },
 ]
