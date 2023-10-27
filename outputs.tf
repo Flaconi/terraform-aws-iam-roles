@@ -92,6 +92,11 @@ output "user_group_memberships" {
   value       = aws_iam_user_group_membership.group_membership
 }
 
+output "user_access_keys" {
+  description = "Created access keys"
+  value       = aws_iam_access_key.access_key
+}
+
 
 # -------------------------------------------------------------------------------------------------
 # Roles
