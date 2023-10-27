@@ -94,6 +94,7 @@ output "user_group_memberships" {
 
 output "user_access_keys" {
   description = "Created access keys"
+  sensitive   = true
   value       = aws_iam_access_key.access_key
 }
 

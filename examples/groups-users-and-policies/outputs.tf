@@ -15,5 +15,6 @@ output "users" {
 
 output "users_keys" {
   description = "Created user's access keys"
+  sensitive   = true
   value       = module.aws_iam.user_access_keys
 }
